@@ -2,3 +2,70 @@
 
 Contains all the material used in the compeitive programming workshop created and directed by Ryan Pelchat.
 
+## Outline
+
+|Week|Date|Subtopics|
+|---|---|---|
+|1|2025-09-09|- 1.3.3 Introduction to Algorithm Analysis <br> - 2.2.1 Array <br> - 2.2.5 Linked Data Structures (overview) <br> - 2.2.6 Special Stack-based Problems <br> - 2.3.1 Binary Heap (Priority Queue) <br> - 2.3.2 Hash Table| 
+|2|2025-09-16||
+|3|2025-09-23||
+|4|2025-09-30||
+|5|2025-10-07||
+|-|READING WEEK||
+|6|2025-10-21||
+|7|2025-10-28||
+|8|2025-11-04||
+|9|2025-11-11||
+|10|2025-11-18||
+|11|2025-11-25||
+|12|2025-12-02||
+
+## Homework
+
+### Week 1
+
+#### 2.2
+
+##### a. 1D Array Manipulation, Medium
+
+- <https://open.kattis.com/problems/jollyjumpers>
+  - [Link to solution](Week_01/Homework_Solutions/jollyjumpers.py)
+
+##### b. 2D Array Manipulation, Easier
+
+- <https://open.kattis.com/problems/epigdanceoff>
+  - [Link to solution](Week_01/Homework_Solutions/epigdanceoff.py)
+
+##### j. Stack
+
+- <https://open.kattis.com/problems/pairingsocks>
+  - [Link to solution](Week_01/Homework_Solutions/pairingsocks.py)
+
+##### l. List/Queue/Deque
+
+- <https://open.kattis.com/problems/integerlists>
+  - [Link to solution](Week_01/Homework_Solutions/integerlists.py)
+
+#### 2.3
+
+##### a Priority Queue
+
+- <https://open.kattis.com/problems/stockprices>
+  - [Link to solution](Week_01/Homework_Solutions/stockprices.py)
+
+##### d. Hash Table (set)
+
+- <https://open.kattis.com/problems/esej>
+  - [Link to solution](Week_01/Homework_Solutions/esej.py)
+- <https://open.kattis.com/problems/shiritori>
+  - [Link to solution](Week_01/Homework_Solutions/shiritori.py)
+
+##### e. Hash Table (map), Easier
+
+- <https://open.kattis.com/problems/recount>
+  - [Link to solution](Week_01/Homework_Solutions/recount.py)
+
+#### Other Special Stack-Based Problem
+
+- <https://open.kattis.com/problems/bracketmatching>
+  - [Link to solution](Week_01/Homework_Solutions/bracketmatching.py)
