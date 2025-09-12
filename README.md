@@ -2,7 +2,7 @@
 
 Contains all the material used in the compeitive programming workshop created and directed by Ryan Pelchat.
 
-## Ressources
+## Resources
 
 - Competitive Programming 4 – by Steven & Felix Halim (part 1 and 2)
 
