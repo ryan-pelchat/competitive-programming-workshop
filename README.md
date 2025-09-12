@@ -78,7 +78,7 @@
 - <https://open.kattis.com/problems/recount>
   - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/recount.py)
 
-#### Other Special Stack-Based Problem
+##### Other Special Stack-Based Problem
 
 - <https://open.kattis.com/problems/bracketmatching>
   - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/bracketmatching.py)
