@@ -1,6 +1,10 @@
 # competitive-programming-workshop
 
-Contains all the material used in the compeitive programming workshop created and directed by Ryan Pelchat.
+- Contains all the material used in the compeitive programming workshop.
+- Hour 1 is facilitated by Ben with problem solution walthroughs.
+- Hour 2 is facilitated by Ryan Pelchat with lessons on theory and concepts.
+- This workshop is under the guidance of Sonya Allin, a Professor at York University.
+- All material created by the student are located in their respective weekly folders.
 
 ## Resources
 
