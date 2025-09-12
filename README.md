@@ -28,52 +28,57 @@
 |11|2025-11-25||
 |12|2025-12-02||
 
-## Homework
+## Week 1
 
-### Week 1
+### Files
+
+- [Power Point Slides](Week_01/Hour_2_Ryan/Week_01.pptx)
+- [Jupyter Notebook](Week_01/Hour_2_Ryan/Week_01.ipynb)
+
+### Homework
 
 #### 2.2
 
 ##### a. 1D Array Manipulation, Medium
 
 - <https://open.kattis.com/problems/jollyjumpers>
-  - [Link to solution](Week_01/Homework_Solutions/jollyjumpers.py)
+  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/jollyjumpers.py)
 
 ##### b. 2D Array Manipulation, Easier
 
 - <https://open.kattis.com/problems/epigdanceoff>
-  - [Link to solution](Week_01/Homework_Solutions/epigdanceoff.py)
+  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/epigdanceoff.py)
 
 ##### j. Stack
 
 - <https://open.kattis.com/problems/pairingsocks>
-  - [Link to solution](Week_01/Homework_Solutions/pairingsocks.py)
+  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/pairingsocks.py)
 
 ##### l. List/Queue/Deque
 
 - <https://open.kattis.com/problems/integerlists>
-  - [Link to solution](Week_01/Homework_Solutions/integerlists.py)
+  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/integerlists.py)
 
 #### 2.3
 
 ##### a Priority Queue
 
 - <https://open.kattis.com/problems/stockprices>
-  - [Link to solution](Week_01/Homework_Solutions/stockprices.py)
+  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/stockprices.py)
 
 ##### d. Hash Table (set)
 
 - <https://open.kattis.com/problems/esej>
-  - [Link to solution](Week_01/Homework_Solutions/esej.py)
+  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/esej.py)
 - <https://open.kattis.com/problems/shiritori>
-  - [Link to solution](Week_01/Homework_Solutions/shiritori.py)
+  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/shiritori.py)
 
 ##### e. Hash Table (map), Easier
 
 - <https://open.kattis.com/problems/recount>
-  - [Link to solution](Week_01/Homework_Solutions/recount.py)
+  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/recount.py)
 
 #### Other Special Stack-Based Problem
 
 - <https://open.kattis.com/problems/bracketmatching>
-  - [Link to solution](Week_01/Homework_Solutions/bracketmatching.py)
+  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/bracketmatching.py)
