@@ -11,12 +11,17 @@ Language: Python3
 
 Approach:
     - strategy
+        - Maintain two heaps (max-heap for bids via negatives,
+          min-heap for asks), insert each order, then repeatedly match
+          while bestBid ≥ bestAsk. Trades execute at the ask; remember
+          the last trade as the stock price.
     - technique (two pointers, recursion, BFS, etc...)
+        - Min Heaps
     - why did you choose it?
     - edge cases considered?
 
-Time Complexity: 0(...)
-Space Complexity: 0(...)
+Time Complexity: O(n log n)
+Space Complexity: O(n)
 
 Notes:
 3.2.3 Complete Search Tips #5
@@ -39,9 +44,9 @@ lines = sys.stdin.read().splitlines()
 buyHeap = []
 sellHeap = []
 output = []
-
+lastTransaction = "-"
 for line in lines:
-    lastTransaction = "-"
+    # lastTransaction = "-"
     outputLine = ""
 
     # if the next line is a test case or not
@@ -60,12 +65,12 @@ for line in lines:
             buyHeap[0][1] -= traded
             sellHeap[0][1] -= traded
 
+            lastTransaction = str(sellHeap[0][0])
+
             if buyHeap and buyHeap[0][1] == 0:
                 heapq.heappop(buyHeap)
             if sellHeap and sellHeap[0][1] == 0:
                 heapq.heappop(sellHeap)
-
-            lastTransaction = str(sellHeap[0][0])
 
         outputLine += str(sellHeap[0][0]) + " " if sellHeap else "- "
         outputLine += str(-1 * buyHeap[0][0]) + " " if buyHeap else "- "
@@ -73,11 +78,8 @@ for line in lines:
         output.append(outputLine)
     else:
         # we are in a new test case, so reset
+        lastTransaction = "-"
         buyHeap = []
         sellHeap = []
 
 sys.stdout.write("\n".join(output))
-
-# strat
-# make a buy max heap
-# make a sell min heap
