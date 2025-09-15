@@ -9,18 +9,16 @@ Author: Ryan Pelchat
 Date Solved:
 Language: Python3
 
-Problem Summary:
-    ...
-
 Approach:
     - strategy
     - technique (two pointers, recursion, BFS, etc...)
     - why did you choose it?
     - edge cases considered?
 
-Time Complexity: 0(...)
-Space Complexity: 0(...)
+Time Complexity: O(...)
+Space Complexity: O(...)
 
 Notes:
 """
+import sys
 from typing import *
