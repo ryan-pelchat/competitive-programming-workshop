@@ -23,6 +23,8 @@ Notes:
 For Python users, read all input first upfront before processing them
 in-memory and buffer output first before writing them out in one go...
 
+Python only supports min heaps, so to get a max heap, we insert the
+numbers as negatives
 """
 
 import sys
@@ -33,20 +35,44 @@ import heapq
 # Linux / macOS (bash, zsh, etc.): press Ctrl+D on a new line.
 # Windows (cmd, PowerShell): press Ctrl+Z then Enter.
 lines = sys.stdin.read().splitlines()
-testCases = int(lines[0])
 
 buyHeap = []
 sellHeap = []
 output = []
 
 for line in lines:
-    if len(lines) != 1:
-        tempData = line.split()
-        if tempData[0] == "buy":
-            heapq.heappush(
-                buyHeap,
-            )
+    lastTransaction = "-"
+    outputLine = ""
 
+    # if the next line is a test case or not
+    if len(line) != 1:
+        order = line.split()  # extract data
+        if order[0] == "buy":
+            heapq.heappush(buyHeap, [int("-" + order[4]), int(order[1])])
+        else:
+            heapq.heappush(sellHeap, [int(order[4]), int(order[1])])
+
+        # if buy and sell are not empty and top of buy >= top of sell
+        if buyHeap and sellHeap and (abs(buyHeap[0][0]) >= sellHeap[0][0]):
+            # if abs(buyHeap[0]) >= sellHeap[0]:
+            lastTransaction = sellHeap[0][0]
+            while buyHeap[0][1] > 0 and sellHeap[0][1] > 0:
+                buyHeap[0][1] -= 1
+                sellHeap[0][1] -= 1
+            if buyHeap[0][1] == 0:
+                heapq.heappop(buyHeap)
+            if sellHeap[0][1] == 0:
+                heapq.heappop(sellHeap)
+        outputLine += str(sellHeap[0][0]) + " " if sellHeap else "- "
+        outputLine += str(-1 * buyHeap[0][0]) + " " if buyHeap else "- "
+        outputLine += str(lastTransaction)
+        output.append(outputLine)
+    else:
+        # we are in a new test case, so reset
+        buyHeap = []
+        sellHeap = []
+
+sys.stdout.write("\n".join(output))
 
 # strat
 # make a buy max heap
