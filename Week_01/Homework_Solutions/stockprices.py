@@ -45,16 +45,15 @@ for line in lines:
     outputLine = ""
 
     # if the next line is a test case or not
-    if len(line) != 1:
+    if not line.isdigit():
         order = line.split()  # extract data
         if order[0] == "buy":
-            heapq.heappush(buyHeap, [int("-" + order[4]), int(order[1])])
+            heapq.heappush(buyHeap, [-int(order[4]), int(order[1])])
         else:
             heapq.heappush(sellHeap, [int(order[4]), int(order[1])])
 
         # if buy and sell are not empty and top of buy >= top of sell
         while buyHeap and sellHeap and (abs(buyHeap[0][0]) >= sellHeap[0][0]):
-            lastTransaction = str(sellHeap[0][0])
 
             traded = min(buyHeap[0][1], sellHeap[0][1])
 
@@ -65,6 +64,8 @@ for line in lines:
                 heapq.heappop(buyHeap)
             if sellHeap and sellHeap[0][1] == 0:
                 heapq.heappop(sellHeap)
+
+            lastTransaction = str(sellHeap[0][0])
 
         outputLine += str(sellHeap[0][0]) + " " if sellHeap else "- "
         outputLine += str(-1 * buyHeap[0][0]) + " " if buyHeap else "- "
