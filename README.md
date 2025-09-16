@@ -87,7 +87,20 @@
 
 ### Homework
 
-#### Identify Data Structure/Strategy and Solve
+
+#### Identify Data Structure/Strategy
+
+|Problem|Data Structure/Strategy|
+|---|---|
+|[Greedily Increasing](https://open.kattis.com/problems/greedilyincreasing)|Answer here next week|
+|[Baloni](https://open.kattis.com/problems/baloni)|Answer here next week|
+|[2048](https://open.kattis.com/problems/baloni)|Answer here next week|
+|[Restaurant](https://open.kattis.com/problems/restaurant)|Answer here next week|
+|[Teque](https://open.kattis.com/problems/teque)|Answer here next week|
+|[Ale House](https://open.kattis.com/problems/alehouse)|Answer here next week|
+|[Grandpa Bernie](https://open.kattis.com/problems/grandpabernie)|Answer here next week|
+
+#### Solve
 
 - <https://open.kattis.com/problems/greedilyincreasing>
   - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/greedilyincreasing)
@@ -103,3 +116,5 @@
   - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/alehouse)
 - <https://open.kattis.com/problems/grandpabernie>
   - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/grandpabernie)
+
+
