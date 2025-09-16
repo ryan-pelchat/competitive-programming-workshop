@@ -87,7 +87,6 @@
 
 ### Homework
 
-
 #### Identify Data Structure/Strategy
 
 |Problem|Data Structure/Strategy|
