@@ -82,3 +82,24 @@
 
 - <https://open.kattis.com/problems/bracketmatching>
   - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/bracketmatching.py)
+
+## Week 2
+
+### Homework
+
+#### Identify Data Structure/Strategy and Solve
+
+- <https://open.kattis.com/problems/greedilyincreasing>
+  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/greedilyincreasing)
+- <https://open.kattis.com/problems/baloni>
+  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/baloni)
+- <https://open.kattis.com/problems/2048>
+  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/2048)
+- <https://open.kattis.com/problems/restaurant>
+  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/restaurant)
+- <https://open.kattis.com/problems/teque>
+  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/teque)
+- <https://open.kattis.com/problems/alehouse>
+  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/alehouse)
+- <https://open.kattis.com/problems/grandpabernie>
+  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/grandpabernie)
