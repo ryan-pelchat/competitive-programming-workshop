@@ -67,3 +67,15 @@
 |Answer here next week|[Teque](https://open.kattis.com/problems/teque)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/tequ.py)|
 |Answer here next week|[Ale House](https://open.kattis.com/problems/alehouse)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/alehouse.py)|
 |Answer here next week|[Grandpa Bernie](https://open.kattis.com/problems/grandpabernie)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/grandpabernie.py)|
+
+## Week 3
+
+### Homework
+
+#### Implement your own Union-Find Disjoint Sets (UFDS)
+
+#### Identify Data Structure/Strategy + Solve
+
+|Section|Problem|Solution|
+|---|---|---|
+|Answer here next week|[Union-Find](https://open.kattis.com/problems/unionfind)|[Solution](Week_03/Hour_2_Ryan/unionfind.py)|
