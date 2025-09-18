@@ -62,6 +62,3 @@ match direction:
         mainGrid = rotate90Clockwise(mainGrid)
         mainGrid = rotate90Clockwise(mainGrid)
         sys.stdout.write("\n".join([" ".join(list(map(str, row))) for row in mainGrid]))
-
-
-# print(smashTogetherLeft(mainGrid))
