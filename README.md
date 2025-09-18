@@ -38,51 +38,17 @@
 
 ### Homework
 
-#### 2.2
-
-##### a. 1D Array Manipulation, Medium
-
-- <https://open.kattis.com/problems/jollyjumpers>
-  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/jollyjumpers.py)
-
-##### b. 2D Array Manipulation, Easier
-
-- <https://open.kattis.com/problems/epigdanceoff>
-  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/epigdanceoff.py)
-
-##### j. Stack
-
-- <https://open.kattis.com/problems/pairingsocks>
-  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/pairingsocks.py)
-
-##### l. List/Queue/Deque
-
-- <https://open.kattis.com/problems/integerlists>
-  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/integerlists.py)
-
-#### 2.3
-
-##### a Priority Queue
-
-- <https://open.kattis.com/problems/stockprices>
-  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/stockprices.py)
-
-##### d. Hash Table (set)
-
-- <https://open.kattis.com/problems/esej>
-  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/esej.py)
-- <https://open.kattis.com/problems/shiritori>
-  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/shiritori.py)
-
-##### e. Hash Table (map), Easier
-
-- <https://open.kattis.com/problems/recount>
-  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/recount.py)
-
-##### Other Special Stack-Based Problem
-
-- <https://open.kattis.com/problems/bracketmatching>
-  - [Link to solution](Week_01/Hour_2_Ryan/Homework_Solutions/bracketmatching.py)
+|Section|Problem|Solution|
+|---|---|---|
+|2.2 a. 1D Array Manipulation, Medium|[Jolly Jumpers](https://open.kattis.com/problems/jollyjumpers)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/jollyjumpers.py)|
+|2.2 b. 2D Array Manipulation, Easier|[Epig Dance Off](https://open.kattis.com/problems/epigdanceoff)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/epigdanceoff.py)|
+|2.2 j. Stack|[Pairing Socks](https://open.kattis.com/problems/pairingsocks)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/pairingsocks.py)|
+|2.2 l. List/Queue/Deque|[Integer Lists](https://open.kattis.com/problems/integerlists)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/integerlists.py)|
+|2.3 a Priority Queue|[Stock Prices](https://open.kattis.com/problems/stockprices)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/stockprices.py)|
+|2.3 d. Hash Table (set)|[Esej](https://open.kattis.com/problems/esej)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/esej.py)|
+|2.3 d. Hash Table (set)|[Shiritori](https://open.kattis.com/problems/shiritori)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/shiritori.py)|
+|2.3 e. Hash Table (map), Easier|[Recount](https://open.kattis.com/problems/recount)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/recount.py)|
+|Other Special Stack-Based Problem|[Bracket Matching](https://open.kattis.com/problems/bracketmatching)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/bracketmatching.py)|
 
 ## Week 2
 
@@ -90,31 +56,12 @@
 
 #### Identify Data Structure/Strategy
 
-|Problem|Data Structure/Strategy|
-|---|---|
-|[Greedily Increasing](https://open.kattis.com/problems/greedilyincreasing)|Answer here next week|
-|[Baloni](https://open.kattis.com/problems/baloni)|Answer here next week|
-|[2048](https://open.kattis.com/problems/baloni)|Answer here next week|
-|[Restaurant](https://open.kattis.com/problems/restaurant)|Answer here next week|
-|[Teque](https://open.kattis.com/problems/teque)|Answer here next week|
-|[Ale House](https://open.kattis.com/problems/alehouse)|Answer here next week|
-|[Grandpa Bernie](https://open.kattis.com/problems/grandpabernie)|Answer here next week|
-
-#### Solve
-
-- <https://open.kattis.com/problems/greedilyincreasing>
-  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/greedilyincreasing)
-- <https://open.kattis.com/problems/baloni>
-  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/baloni)
-- <https://open.kattis.com/problems/2048>
-  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/2048)
-- <https://open.kattis.com/problems/restaurant>
-  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/restaurant)
-- <https://open.kattis.com/problems/teque>
-  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/teque)
-- <https://open.kattis.com/problems/alehouse>
-  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/alehouse)
-- <https://open.kattis.com/problems/grandpabernie>
-  - [Link to solution](Week_02/Hour_2_Ryan/Homework_Solutions/grandpabernie)
-
-
+|Section|Problem|Solution|
+|---|---|---|
+|Answer here next week|[Greedily Increasing](https://open.kattis.com/problems/greedilyincreasing)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/greedilyincreasing.py)|
+|Answer here next week|[Baloni](https://open.kattis.com/problems/baloni)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/baloni.py)|
+|Answer here next week|[2048](https://open.kattis.com/problems/baloni)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/2048.py)|
+|Answer here next week|[Restaurant](https://open.kattis.com/problems/restaurant)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/restaurant.py)|
+|Answer here next week|[Teque](https://open.kattis.com/problems/teque)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/tequ.py)|
+|Answer here next week|[Ale House](https://open.kattis.com/problems/alehouse)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/alehouse.py)|
+|Answer here next week|[Grandpa Bernie](https://open.kattis.com/problems/grandpabernie)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/grandpabernie.py)|
