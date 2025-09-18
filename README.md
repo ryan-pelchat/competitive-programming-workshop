@@ -38,6 +38,8 @@
 
 ### Homework
 
+#### Solve
+
 |Section|Problem|Solution|
 |---|---|---|
 |2.2 a. 1D Array Manipulation, Medium|[Jolly Jumpers](https://open.kattis.com/problems/jollyjumpers)|[Solution](Week_01/Hour_2_Ryan/Homework_Solutions/jollyjumpers.py)|
@@ -54,7 +56,7 @@
 
 ### Homework
 
-#### Identify Data Structure/Strategy
+#### Identify Data Structure/Strategy + Solve
 
 |Section|Problem|Solution|
 |---|---|---|
