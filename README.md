@@ -60,13 +60,13 @@
 
 |Section|Problem|Solution|
 |---|---|---|
-|Answer here next week|[Greedily Increasing](https://open.kattis.com/problems/greedilyincreasing)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/greedilyincreasing.py)|
-|Answer here next week|[Baloni](https://open.kattis.com/problems/baloni)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/baloni.py)|
-|Answer here next week|[2048](https://open.kattis.com/problems/baloni)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/2048.py)|
-|Answer here next week|[Restaurant](https://open.kattis.com/problems/restaurant)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/restaurant.py)|
-|Answer here next week|[Teque](https://open.kattis.com/problems/teque)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/tequ.py)|
-|Answer here next week|[Ale House](https://open.kattis.com/problems/alehouse)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/alehouse.py)|
-|Answer here next week|[Grandpa Bernie](https://open.kattis.com/problems/grandpabernie)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/grandpabernie.py)|
+|2.2 a. 1D Array Manipulation, Medium|[Greedily Increasing](https://open.kattis.com/problems/greedilyincreasing)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/greedilyincreasing.py)|
+|2.2 a. 1D Array Manipulation, Medium|[Baloni](https://open.kattis.com/problems/baloni)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/baloni.py)|
+|2.2 d. 2D Array Manipulation, Harder|[2048](https://open.kattis.com/problems/baloni)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/2048.py)|
+|2.2 j. Stack|[Restaurant](https://open.kattis.com/problems/restaurant)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/restaurant.py)|
+|2.2 l. List/Queue/Deque|[Teque](https://open.kattis.com/problems/teque)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/tequ.py)|
+|2.3 a. Priority Queue|[Ale House](https://open.kattis.com/problems/alehouse)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/alehouse.py)|
+|2.3 e. Hash Table (map), Easier|[Grandpa Bernie](https://open.kattis.com/problems/grandpabernie)|[Solution](Week_02/Hour_2_Ryan/Homework_Solutions/grandpabernie.py)|
 
 ## Week 3
 
