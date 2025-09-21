@@ -70,6 +70,11 @@
 
 ## Week 3
 
+### Files
+
+- [Power Point Slides](Week_03/Hour_2_Ryan/Week_03.pptx)
+- [Jupyter Notebook](Week_03/Hour_2_Ryan/Week_03.ipynb)
+
 ### Homework
 
 #### Implement your own Union-Find Disjoint Sets (UFDS)
