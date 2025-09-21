@@ -16,8 +16,10 @@ Approach:
     - why did you choose it?
     - edge cases considered?
 
-Time Complexity: O(n)
-Space Complexity: O(n)
+Time Complexity: O(n^2)
+    - Process each grid cell once; here n=4 so it’s constant time in practice
+Space Complexity: O(n^2)
+    - Store a new 4×4 grid
 
 Notes:
 """
