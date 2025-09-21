@@ -17,9 +17,9 @@ Approach:
     - edge cases considered?
 
 Time Complexity: O(n^2)
-    - Process each grid cell once; here n=4 so it’s constant time in practice
+    - Process each grid cell once; here n=4 so it's constant time in practice
 Space Complexity: O(n^2)
-    - Store a new 4×4 grid
+    - Store a new 4x4 grid
 
 Notes:
 """
