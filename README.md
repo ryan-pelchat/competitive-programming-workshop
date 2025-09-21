@@ -79,3 +79,9 @@
 |Section|Problem|Solution|
 |---|---|---|
 |Answer here next week|[Union-Find](https://open.kattis.com/problems/unionfind)|[Solution](Week_03/Hour_2_Ryan/unionfind.py)|
+|Answer here next week|[Almost Union-Find](https://open.kattis.com/problems/almostunionfind)|[Solution](Week_03/Hour_2_Ryan/almostunionfind.py)|
+|Answer here next week|[Geppetto](https://open.kattis.com/problems/geppetto)|[Solution](Week_03/Hour_2_Ryan/geppetto)|
+|Answer here next week|[Black Friday](https://open.kattis.com/problems/blackfriday)|[Solution](Week_03/Hour_2_Ryan/blackfriday)|
+|Answer here next week|[Veci](https://open.kattis.com/problems/veci)|[Solution](Week_03/Hour_2_Ryan/veci)|
+|Answer here next week|[Tautology](https://open.kattis.com/problems/tautology)|[Solution](Week_03/Hour_2_Ryan/tautology)|
+|Answer here next week|[Thanos The Hero](https://open.kattis.com/problems/thanosthehero)|[Solution](Week_03/Hour_2_Ryan/thanosthehero)|
