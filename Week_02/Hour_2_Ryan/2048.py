@@ -10,22 +10,20 @@ Language: Python3
 
 Approach:
     - strategy
+        - Solve for one direction
+        - Make function to rotate 2D matrix to implement other operations
     - technique (two pointers, recursion, BFS, etc...)
     - why did you choose it?
     - edge cases considered?
 
-Time Complexity: O(...)
-Space Complexity: O(...)
+Time Complexity: O(n)
+Space Complexity: O(n)
 
 Notes:
 """
 
 import sys
 from typing import *
-
-
-from typing import *
-import sys
 
 lines = sys.stdin.read().strip().splitlines()
 direction = int(lines.pop())
