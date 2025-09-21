@@ -1,3 +1,29 @@
+"""
+Problem Title: 2048
+Platform: Kattis
+Problem URL: https://open.kattis.com/problems/2048
+Difficulty: 2.6 Easy
+
+Author: Ryan Pelchat
+Date Solved: 2025-09-15
+Language: Python3
+
+Approach:
+    - strategy
+    - technique (two pointers, recursion, BFS, etc...)
+    - why did you choose it?
+    - edge cases considered?
+
+Time Complexity: O(...)
+Space Complexity: O(...)
+
+Notes:
+"""
+
+import sys
+from typing import *
+
+
 from typing import *
 import sys
 
