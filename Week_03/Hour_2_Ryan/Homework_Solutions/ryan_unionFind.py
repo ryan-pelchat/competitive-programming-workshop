@@ -4,16 +4,19 @@ This is my personal implementation of the union-find disjoint set
 
 """
 
+from collections import defaultdict
+import random
+
 
 class Ryan_unionFind:
     """An implementation of the union-find disjoint set data structure
 
 
     Attributes:
-        _numDisjointSets: (int) represents the number of disjoint sets
-        _elements: (list[int]) stores all the values
+        _numSet: (int) represents the number of disjoint sets
+        _parents: (list[int]) stores the index (points to) of parents
         _ranks: (list[int]) stores the rank of every set
-        _sizeOfSets: (list[int]) stores the size of every set
+        _sizes: (list[int]) stores the size of every set
     """
 
     def __init__(self, numItems: int, numSets: int = None) -> None:
@@ -21,27 +24,70 @@ class Ryan_unionFind:
 
         Args:
             numItems: (int) number of elements to create
+                        (must be greater than 1)
             numSets: (int) number of starting sets to create
                         (default is that numItems == numSets)
+                        (must be greater or equal to 1 and smaller than
+                        numItems)
+
+        Raises:
+            ValueError:
+                numItems < 1
+                numItems < numSets
         """
+        if numItems < 1:
+            raise ValueError("numItems needs to be greater or equal to 1")
+        elif numSets is not None and numItems < numSets:
+            raise ValueError("numSets must not be greater than numItems")
+
+        self._numSet = numItems
+        self._parents = list(range(numItems))
+        self._ranks = [0] * numItems
+        self._sizes = [1] * numItems
         if numSets is None:
             numSets = numItems
         else:
-            pass
-        self._numDisjointSets = numItems
-        self._elements = list(range(numItems))
-        self._ranks = [0] * numItems
-        self._sizeOfSets = [1] * numItems
+            while self._numSet > numSets:
+                self.unionSet(random.randrange(numItems), random.randrange(numItems))
+
+    def __str__(self) -> str:
+        """Returns a string representation of this object
+
+        Note:
+            Runtime is slower
+
+        Returns:
+            str: string representation of this object
+        """
+        self.optimize()
+        structure = defaultdict(list)
+        output = []
+        for idx, element in enumerate(self._parents):
+            structure[element].append(idx)
+
+        for key in structure:
+            output.append(f"\n{key}\n\t")
+            for child in structure[key]:
+                output.append(f"{child}, ")
+        return "".join(output)
+
+    def __len__(self) -> int:
+        """Returns the number of disjoint sets currently stored
+
+        Returns:
+            int: the number of disjoint sets currently stored
+        """
+        return self.getNumDisjointSets()
 
     def findSet(self, element: int) -> int:
         """Finds the representative item of a set
             (finds which set element belongs to)
 
-        As it recursively finds the answer, it does path compression
+        As it iteratively finds the answer, it does path compression
         which optimizes the search for the root element
 
         Args:
-            element (int): The file location of the spreadsheet
+            element (int): The element fo find the set it is part of
 
         Notes:
             I initially implemented this recursively, but in the edge case
@@ -56,13 +102,13 @@ class Ryan_unionFind:
         toFind = element
 
         # finding the representative root element
-        while toFind != self._elements[element]:
-            children.append(element)
-            toFind = self._elements[element]
+        while toFind != self._parents[toFind]:
+            children.append(toFind)
+            toFind = self._parents[toFind]
 
         # path compression
-        for element in children:
-            self._elements[element] = toFind
+        for c in children:
+            self._parents[c] = toFind
 
         return toFind
 
@@ -92,13 +138,18 @@ class Ryan_unionFind:
         if s1 == s2:
             return None
 
+        # Ensure s2 has greater rank than s1
         if self._ranks[s1] > self._ranks[s2]:
             s1, s2 = s2, s1
-        self._elements[s1] = s2
-        self._ranks[s2] += 1
+        # Increase rank only when equal
+        elif self._ranks[s1] == self._ranks[s2]:
+            self._ranks[s2] += 1
 
-        self._numDisjointSets -= 1
-        self._sizeOfSets[s2] += self._sizeOfSets[s1]
+        # Attach s1 under s2
+        self._parents[s1] = s2
+
+        self._numSet -= 1
+        self._sizes[s2] += self._sizes[s1]
 
     def getNumDisjointSets(self) -> int:
         """Returns the number of disjoint sets currently stored
@@ -106,7 +157,7 @@ class Ryan_unionFind:
         Returns:
             int: the number of disjoint sets currently stored
         """
-        return self._numDisjointSets
+        return self._numSet
 
     def sizeOf(self, element) -> int:
         """Returns the size of the set that element is a part of
@@ -118,4 +169,9 @@ class Ryan_unionFind:
         Returns:
             int: The size of the set that element is a part of
         """
-        return self._sizeOfSets[element]
+        return self._sizes[self.findSet(element)]
+
+    def optimize(self) -> None:
+        """Runs the path compression on every element in data structure"""
+        for i in range(len(self._parents)):
+            self.findSet(i)
