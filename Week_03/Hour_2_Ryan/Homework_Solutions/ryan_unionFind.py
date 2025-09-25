@@ -5,7 +5,7 @@ This is my personal implementation of the union-find disjoint set
 """
 
 
-class ryan_unionFind:
+class Ryan_unionFind:
     """An implementation of the union-find disjoint set data structure
 
 
