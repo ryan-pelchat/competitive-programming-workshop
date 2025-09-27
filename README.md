@@ -18,10 +18,10 @@
 |1|2025-09-09|- 1.3.3 Introduction to Algorithm Analysis <br> - 2.2.1 Array <br> - 2.2.5 Linked Data Structures (overview) <br> - 2.2.6 Special Stack-based Problems <br> - 2.3.1 Binary Heap (Priority Queue) <br> - 2.3.2 Hash Table| 
 |2|2025-09-16|Benchmarking Problems|
 |3|2025-09-23|- Suggested Homework Review <br> - 2.4.2 Union-Find Disjoint Sets <br> - 3.2.1 Iterative Complete Search <br> - 3.2.3 Complete Search Tips <br> |
-|4|2025-09-30|- 3.2.2 Recursive Complete Search <br> - 3.3 Divide and Conquer <br>   - 3.3.1 Interesting Usages of Binary Search <br>    - 3.3.2 Ternary Search <br> - 3.4 Greedy (overview) <br> - 4.2.2 Depth First Search (DFS) <br> - 4.2.3 Breadth First Search (BFS) <br> - 4.2.4 Finding Connected Components (Undirected Graph) <br> - 4.2.5 Flood Fill (Implicit 2D Grid Graph)|
-|5|2025-10-07|- 3.5 Dynamic Programming|
-|-|READING WEEK||
-|6|2025-10-21||
+|4|2025-09-30|- 4.3 Minimum Spanning Tree (MST) <br> - 4.3.4 Other Applications <br> - 4.3.5 MST in Programming Contests|
+|5|2025-10-07|- 3.4 Greedy (overview) <br> - 3.5 Dynamic Programming|
+|-|READING WEEK|N/A|
+|6|2025-10-21|- 4.2.2 Depth First Search (DFS) <br> - 4.2.3 Breadth First Search (BFS) <br> - 4.2.4 Finding Connected Components (Undirected Graph) <br> - 4.2.5 Flood Fill (Implicit 2D Grid Graph) <br> - 4.2.6 Topological Sort (Directed Acyclic Graph) <br> - 4.2.7 Bipartite Graph Check (Undirected Graph) <br> - 4.2.8 Cycle Check (Directed Graph) <br> - 4.2.9 Finding Articulation Points and Bridges (Undirected Graph) <br> - 4.2.10 Finding Strongly Connected Components (Directed Graph) <br> - 4.2.11 Graph Traversal in Programming Contests|
 |7|2025-10-28||
 |8|2025-11-04||
 |9|2025-11-11||
