@@ -90,3 +90,21 @@
 |Answer here next week|[Veci](https://open.kattis.com/problems/veci)|[Solution](Week_03/Hour_2_Ryan/veci)|
 |Answer here next week|[Tautology](https://open.kattis.com/problems/tautology)|[Solution](Week_03/Hour_2_Ryan/tautology)|
 |Answer here next week|[Thanos The Hero](https://open.kattis.com/problems/thanosthehero)|[Solution](Week_03/Hour_2_Ryan/thanosthehero)|
+
+## Week 4
+
+### Files
+
+- [Power Point Slides](Week_04/Hour_2_Ryan/Week_04.pptx)
+
+### Homework
+
+#### Implement your own Kruskal MST Algorithm
+
+#### Identify Data Structure/Strategy + Solve
+|Section|Problem|Solution|
+|---|---|---|
+|Answer here next week|[Island Hopping](https://open.kattis.com/problems/islandhopping)|[Solution](Week_03/Hour_2_Ryan/islandhopping.py)|
+|Answer here next week|[Millionaire Madness](https://open.kattis.com/problems/millionairemadness)|[Solution](Week_03/Hour_2_Ryan/millionairemadness.py)|
+|Answer here next week|[Lost Map](https://open.kattis.com/problems/lostmap)|[Solution](Week_03/Hour_2_Ryan/lostmap.py)|
+|Answer here next week|[Svemir](https://open.kattis.com/problems/svemir)|[Solution](Week_03/Hour_2_Ryan/svemir.py)|
