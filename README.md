@@ -87,11 +87,11 @@
 |---|---|---|
 |2.4 b. Union-Find Disjoint Sets|[Union-Find](https://open.kattis.com/problems/unionfind)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/unionfind.py)|
 |2.4 b. Union-Find Disjoint Sets|[Almost Union-Find](https://open.kattis.com/problems/almostunionfind)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/almostunionfind.py)|
-|3.2 f. Iterative (Combination)|[Geppetto](https://open.kattis.com/problems/geppetto)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/geppetto)|
-|3.2 b. Iterative (Two Nested Loops)|[Black Friday](https://open.kattis.com/problems/blackfriday)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/blackfriday)|
-|3.2 e. Iterative (Permutation)|[Veci](https://open.kattis.com/problems/veci)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/veci)|
-|3.2 d. Iterative (Three or More Nested Loops, Harder)|[Tautology](https://open.kattis.com/problems/tautology)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/tautology)|
-|3.2 i. Mathematical Simulation (Complete Search), Harder|[Thanos The Hero](https://open.kattis.com/problems/Homework_Solutions/thanosthehero)|[Solution](Week_03/Hour_2_Ryan/thanosthehero)|
+|3.2 f. Iterative (Combination)|[Geppetto](https://open.kattis.com/problems/geppetto)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/geppetto.py)|
+|3.2 b. Iterative (Two Nested Loops)|[Black Friday](https://open.kattis.com/problems/blackfriday)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/blackfriday.py)|
+|3.2 e. Iterative (Permutation)|[Veci](https://open.kattis.com/problems/veci)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/veci.py)|
+|3.2 d. Iterative (Three or More Nested Loops, Harder)|[Tautology](https://open.kattis.com/problems/tautology)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/tautology.py)|
+|3.2 i. Mathematical Simulation (Complete Search), Harder|[Thanos The Hero](https://open.kattis.com/problems/Homework_Solutions/thanosthehero.py)|[Solution](Week_03/Hour_2_Ryan/thanosthehero)|
 
 ## Week 4
 
