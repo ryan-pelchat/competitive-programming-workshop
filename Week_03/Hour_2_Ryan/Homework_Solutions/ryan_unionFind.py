@@ -1,35 +1,3 @@
-"""
-Problem Title:
-Platform:
-Problem URL:
-Difficulty:
-Categories:
-
-Author: Ryan Pelchat
-Date Solved:
-Language: Python3
-
-Approach:
-    - strategy
-    - technique (two pointers, recursion, BFS, etc...)
-    - why did you choose it?
-    - edge cases considered?
-
-Time Complexity: O(...)
-Space Complexity: O(...)
-
-Notes:
-"""
-
-import sys
-from typing import *
-
-"""ryan_unionFind.py
-
-This is my personal implementation of the union-find disjoint set
-
-"""
-
 """ryan_unionFind.py
 
 This is my personal implementation of the union-find disjoint set
@@ -207,26 +175,3 @@ class Ryan_unionFind:
         """Runs the path compression on every element in data structure"""
         for i in range(len(self._parents)):
             self.findSet(i)
-
-
-# processing input
-lines = sys.stdin.read().strip().splitlines()
-n = int(lines[0].split()[0])
-output = []
-
-ufds = Ryan_unionFind(n)
-
-# going through every command
-for command in lines[1:]:
-    line = command.split()
-    op = line[0]
-    e1 = int(line[1])
-    e2 = int(line[2])
-
-    match op:
-        case "?":
-            output.append("yes\n" if ufds.isSameSet(e1, e2) else "no\n")
-        case "=":
-            ufds.unionSet(e1, e2)
-
-sys.stdout.write("".join(output))
