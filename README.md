@@ -91,7 +91,7 @@
 |3.2 b. Iterative (Two Nested Loops)|[Black Friday](https://open.kattis.com/problems/blackfriday)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/blackfriday.py)|
 |3.2 e. Iterative (Permutation)|[Veci](https://open.kattis.com/problems/veci)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/veci.py)|
 |3.2 d. Iterative (Three or More Nested Loops, Harder)|[Tautology](https://open.kattis.com/problems/tautology)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/tautology.py)|
-|3.2 i. Mathematical Simulation (Complete Search), Harder|[Thanos The Hero](https://open.kattis.com/problems/Homework_Solutions/thanosthehero.py)|[Solution](Week_03/Hour_2_Ryan/thanosthehero)|
+|3.2 i. Mathematical Simulation (Complete Search), Harder|[Thanos The Hero](https://open.kattis.com/problems/thanosthehero)|[Solution](Week_03/Hour_2_Ryan/Homework_Solutions/thanosthehero.py)|
 
 ## Week 4
 
