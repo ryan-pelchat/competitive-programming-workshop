@@ -11,15 +11,30 @@ Language: Python3
 
 Approach:
     - strategy
+        - Model each set using a disjoint-set union (union-find) structure.
+        - Maintain an array idx[x] mapping each original element x to its
+          current DSU node. On a move operation, mint a new node for x,
+          reattach it under the target set's root, and update idx[x].
+        - Track both the size and sum of each set in arrays indexed by
+          representative nodes.
     - technique (two pointers, recursion, BFS, etc...)
+        - Union-Find Disjoint Set (DSU) with path compression.
+        - Augmented with per-set metadata (size and sum)
+        - idx array to keep track of mapping which nodes point to which
     - why did you choose it?
     - edge cases considered?
 
-Time Complexity: O(...)
-Space Complexity: O(...)
+Time Complexity: O(1)
+    - effectively constant (amortized O(a(n+m)) per operation (inverse Ackermann))
+Space Complexity: O(n + m)
 
 Notes:
-    NOT WORKING YET
+    - At any time, idx[x] tells you which DSU node ID currently stands for
+      element x.
+    - If you move x, you mint a fresh node and update idx[x] to point to the
+      new node.
+    - Only root nodes store meaningful size/sum aggregates; non-root values
+      are not used in queries.
 """
 
 import sys
@@ -27,132 +42,92 @@ from collections import defaultdict
 
 
 class Ryan_unionFind:
-    """An implementation of the union-find disjoint set data structure
-
-
-    Attributes:
-        _numSet: (int) represents the number of disjoint sets
-        _parents: (list[int]) stores the index (points to) of parents
-        _ranks: (list[int]) stores the rank of every set
-        _sizes: (list[int]) stores the size of every set
-        _sums: (list[int]) stores the sum of every set
-    """
+    """An implementation of the union-find disjoint set data structure"""
 
     def __init__(self, numItems: int) -> None:
         if numItems < 1:
             raise ValueError("numItems needs to be greater or equal to 1")
         numItems += 1
-        self._parents = list(range(numItems))
-        self._ranks = [0] * numItems
-        self._sizes = [1] * numItems
-        self._sums = list(range(numItems))
-
-    def __str__(self) -> str:
-        self.optimize()
-        structure = defaultdict(list)
-        output = []
-        for idx, element in enumerate(self._parents):
-            structure[element].append(idx)
-
-        for key in structure:
-            output.append(f"\n{key}\n\t")
-            for child in structure[key]:
-                output.append(f"{child}, ")
-        return "".join(output)
-
-    def __len__(self) -> int:
-        return self.getNumDisjointSets()
+        self._parents = list(range(numItems + 1))
+        self._sizes = [1] * (numItems + 1)
+        self._idx = list(range(numItems + 1))
+        self._sums = list(range(numItems + 1))
 
     def findSet(self, element: int) -> int:
-        # to keep track of vertexes travelled to do path compression
-        children = []
-        toFind = element
-
-        # finding the representative root element
-        while toFind != self._parents[toFind]:
-            children.append(toFind)
-            toFind = self._parents[toFind]
-
-        # path compression
-        for c in children:
-            self._parents[c] = toFind
-
-        return toFind
+        while element != self._parents[element]:
+            # path compression as you traverse
+            self._parents[element] = self._parents[self._parents[element]]
+            element = self._parents[element]
+        return element
 
     def isSameSet(self, element1: int, element2: int) -> bool:
-        return self.findSet(element1) == self.findSet(element2)
+        return self.findSet(self._idx[element1]) == self.findSet(self._idx[element2])
 
     def unionSet(self, element1: int, element2: int) -> None:
-        s1 = self.findSet(element1)
-        s2 = self.findSet(element2)
+        s1 = self.findSet(self._idx[element1])
+        s2 = self.findSet(self._idx[element2])
 
         if s1 == s2:
             return None
 
-        # Ensure s2 has greater rank than s1
-        if self._ranks[s1] > self._ranks[s2]:
+        if self._sizes[s1] > self._sizes[s2]:
             s1, s2 = s2, s1
-        # Increase rank only when equal
-        elif self._ranks[s1] == self._ranks[s2]:
-            self._ranks[s2] += 1
 
-        # Attach s1 under s2
         self._parents[s1] = s2
 
-        # Update sums
-        self._sums[s2] += self._sums[s1]
-
-        # Update sizes
         self._sizes[s2] += self._sizes[s1]
 
-    def sizeOf(self, element) -> int:
-        return self._sizes[self.findSet(element)]
+        self._sums[s2] += self._sums[s1]
 
-    def optimize(self) -> None:
-        for i in range(len(self._parents)):
-            self.findSet(i)
-
-    def move(self, element1, element2) -> None:
-        s1 = self.findSet(element1)
-        s2 = self.findSet(element2)
+    def move(self, element1: int, element2: int) -> None:
+        # Move element1 into the set that currently contains element2
+        s1 = self.findSet(self._idx[element1])
+        s2 = self.findSet(self._idx[element2])
 
         if s1 == s2:
             return None
 
-        # Move element to new set
-        self._parents[element1] = s2
-
-        # Update sums
+        # update sizes and sums for s1
+        self._sizes[s1] -= 1
         self._sums[s1] -= element1
+
+        # Create a new node for element1
+        self._parents.append(s2)
+        self._sizes.append(1)
+        self._sums.append(element1)
+
+        # update sizes and sums for s2
+        self._sizes[s2] += 1
         self._sums[s2] += element1
 
-        self._sizes[s1] -= 1
-        self._sizes[s2] += 1
+        # Update mapping so element1 now refers to the fresh node
+        self._idx[element1] = len(self._parents) - 1
 
     def getSumOf(self, element) -> int:
-        return self._sums[self.findSet(element)]
+        return self._sums[self.findSet(self._idx[element])]
+
+    def getSizeOf(self, element: int) -> int:
+        return self._sizes[self.findSet(self._idx[element])]
 
 
 lines = sys.stdin.read().strip().splitlines()
-setSize = int(lines[0].split()[0])
-
 output = []
-
-ufds = Ryan_unionFind(setSize)
-for line in lines[1:]:
-    values = line.split()
-    command = values[0]
-    match command:
-        case "3":
-            p = int(values[1])
-            output.append(f"{ufds.sizeOf(p)} {ufds.getSumOf(p)}\n")
-        case _:
-            p = int(values[1])
-            q = int(values[2])
-            match command:
-                case "1":
-                    ufds.unionSet(p, q)
-                case "2":
-                    ufds.move(p, q)
+i = 0
+while i < len(lines):
+    n, m = map(int, lines[i].split())
+    ufds = Ryan_unionFind(n)
+    for _ in range(m):
+        i += 1
+        values = list(map(int, lines[i].split()))
+        match values[0]:
+            case 1:
+                ufds.unionSet(values[1], values[2])
+            case 2:
+                ufds.move(values[1], values[2])
+            case 3:
+                output.append(
+                    f"{ufds.getSizeOf(values[1])} {ufds.getSumOf(values[1])}\n"
+                )
+    i += 1
 
 sys.stdout.write("".join(output))
