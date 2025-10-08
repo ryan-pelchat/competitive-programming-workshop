@@ -229,6 +229,8 @@ The implementation using Kruskal isn't fast enough, we need to use Prim's
 #     for j in range(int(next(data))):  # going through vertices
 #         vertexList.append((float(next(data)), float(next(data))))
 
+#     vertexList.sort(key=lambda x : )
+
 #     for idx, vertex in enumerate(vertexList):
 #         mapping[vertex] = idx
 #         vertexListMapped.append(idx)
