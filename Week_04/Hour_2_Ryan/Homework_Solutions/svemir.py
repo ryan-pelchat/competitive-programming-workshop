@@ -202,9 +202,18 @@ lines = sys.stdin.read().strip().splitlines()
 numPlanets = int(lines[0])
 coords = [list(map(int, coord.split())) for coord in lines[1:]]
 edgeList = []
-for coord in itertools.combinations(range(len(coords)), 2):
-    edgeList.append(
-        (tunnelCost(coords[coord[0]], coords[coord[1]]), coord[0], coord[1])
-    )
+for idxc1, c1 in enumerate(coords):
+    for idxc2, c2 in enumerate(coords):
+        if c1 != c2:
+            edgeList.append((tunnelCost(c1, c2), idxc1, idxc2))
+# for coord in itertools.combinations(range(len(coords)), 2):
+#     edgeList.append(
+#         (tunnelCost(coords[coord[0]], coords[coord[1]]), coord[0], coord[1])
+#     )
 
+import time
+
+start = time.perf_counter()
 print(ryan_kruskal(numPlanets, edgeList)[1])
+end = time.perf_counter()
+print(f"Execution time: {end - start:.6f} seconds")

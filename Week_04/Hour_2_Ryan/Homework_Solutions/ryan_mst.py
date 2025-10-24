@@ -85,19 +85,22 @@ class Ryan_unionFind:
         """
         return self.findSet(element1) == self.findSet(element2)
 
-    def unionSet(self, element1: int, element2: int) -> None:
+    def unionSet(self, element1: int, element2: int) -> bool:
         """Unite a disjoint set that contains element1 with a different
             disjoint set that contains element2
 
         Args:
             element1 (int): The first element
             element2 (int): The second element
+
+        Returns:
+            bool: True if merged, False if elements in same set
         """
         s1 = self.findSet(element1)
         s2 = self.findSet(element2)
 
         if s1 == s2:
-            return None
+            return False
 
         # Ensure s2 has greater rank than s1
         if self._ranks[s1] > self._ranks[s2]:
@@ -111,6 +114,8 @@ class Ryan_unionFind:
 
         self._numSet -= 1
         self._sizes[s2] += self._sizes[s1]
+
+        return True
 
     def getNumDisjointSets(self) -> int:
         """Returns the number of disjoint sets currently stored
@@ -155,10 +160,7 @@ def ryan_kruskal(
     totalMSTweight = 0
     while edges and len(edgeListOutput) < numVertex - 1:
         w, u, v = edges.pop()
-        ru = ufds.findSet(u)
-        rv = ufds.findSet(v)
-        if ru != rv:
-            ufds.unionSet(ru, rv)
+        if ufds.unionSet(u, v):
             edgeListOutput.append((w, u, v))
             totalMSTweight += w
     return (edgeListOutput, totalMSTweight)
