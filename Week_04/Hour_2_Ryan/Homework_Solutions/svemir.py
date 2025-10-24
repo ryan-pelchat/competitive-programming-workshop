@@ -10,13 +10,26 @@ Date Solved:
 Language: Python3
 
 Approach:
-    - strategy
+    - Strategy
+        - Attach the original index to each planet: (id, x, y, z).
+        - Sort the planets separately by x, by y, and by z.
+        - For each sorted list, add an edge only between consecutive pairs;
+        set the edge weight to min(|Δx|, |Δy|, |Δz|).
+        - Run Kruskal's algorithm on this ~3(n-1) edge set to get the MST cost.
+        - Why this works
+            - For any cut, a minimum-cost edge crossing the cut attains its cost on one axis.
+            On that axis' sorted order, its endpoints must be consecutive across the cut;
+            otherwise there exists a strictly cheaper crossing edge. By the cut property,
+            keeping only consecutive neighbors per axis is sufficient.
     - technique (two pointers, recursion, BFS, etc...)
+        - Sorting (3 axis sorts)
+        - Union-Find (path compression + union by rank)
+        - Kruskal's algorithm
     - why did you choose it?
     - edge cases considered?
 
-Time Complexity: O(...)
-Space Complexity: O(...)
+Time Complexity: O(n log n)  (three O(n log n) sorts + Kruskal over ~3n edges)
+Space Complexity: O(n)       (points, edges, DSU)
 
 Notes:
 """
@@ -108,19 +121,22 @@ class Ryan_unionFind:
         """
         return self.findSet(element1) == self.findSet(element2)
 
-    def unionSet(self, element1: int, element2: int) -> None:
+    def unionSet(self, element1: int, element2: int) -> bool:
         """Unite a disjoint set that contains element1 with a different
             disjoint set that contains element2
 
         Args:
             element1 (int): The first element
             element2 (int): The second element
+
+        Returns:
+            bool: True if merged, False if elements in same set
         """
         s1 = self.findSet(element1)
         s2 = self.findSet(element2)
 
         if s1 == s2:
-            return None
+            return False
 
         # Ensure s2 has greater rank than s1
         if self._ranks[s1] > self._ranks[s2]:
@@ -134,6 +150,8 @@ class Ryan_unionFind:
 
         self._numSet -= 1
         self._sizes[s2] += self._sizes[s1]
+
+        return True
 
     def getNumDisjointSets(self) -> int:
         """Returns the number of disjoint sets currently stored
@@ -178,10 +196,7 @@ def ryan_kruskal(
     totalMSTweight = 0
     while edges and len(edgeListOutput) < numVertex - 1:
         w, u, v = edges.pop()
-        ru = ufds.findSet(u)
-        rv = ufds.findSet(v)
-        if ru != rv:
-            ufds.unionSet(ru, rv)
+        if ufds.unionSet(u, v):
             edgeListOutput.append((w, u, v))
             totalMSTweight += w
     return (edgeListOutput, totalMSTweight)
@@ -189,7 +204,6 @@ def ryan_kruskal(
 
 import sys
 from typing import *
-import itertools
 
 
 def tunnelCost(coor1, coor2) -> int:
@@ -200,20 +214,37 @@ def tunnelCost(coor1, coor2) -> int:
 
 lines = sys.stdin.read().strip().splitlines()
 numPlanets = int(lines[0])
-coords = [list(map(int, coord.split())) for coord in lines[1:]]
+coords = []
+for idx, line in enumerate(lines[1:]):
+    x, y, z = map(int, line.split())
+    coords.append([x, y, z, idx])
+# coords = [list(map(int, coord.split())) for idx, coord in enumerate(lines[1:])]
+
 edgeList = []
-for idxc1, c1 in enumerate(coords):
-    for idxc2, c2 in enumerate(coords):
-        if c1 != c2:
-            edgeList.append((tunnelCost(c1, c2), idxc1, idxc2))
-# for coord in itertools.combinations(range(len(coords)), 2):
-#     edgeList.append(
-#         (tunnelCost(coords[coord[0]], coords[coord[1]]), coord[0], coord[1])
-#     )
+xsorted = sorted(coords, key=lambda x: x[0])
+ysorted = sorted(coords, key=lambda x: x[1])
+zsorted = sorted(coords, key=lambda x: x[2])
+for i in range(len(coords) - 1):
+    edgeList.append(
+        (
+            tunnelCost(xsorted[i], xsorted[i + 1]),
+            xsorted[i][3],
+            xsorted[i + 1][3],
+        )
+    )
+    edgeList.append(
+        (
+            tunnelCost(ysorted[i], ysorted[i + 1]),
+            ysorted[i][3],
+            ysorted[i + 1][3],
+        )
+    )
+    edgeList.append(
+        (
+            tunnelCost(zsorted[i], zsorted[i + 1]),
+            zsorted[i][3],
+            zsorted[i + 1][3],
+        )
+    )
 
-import time
-
-start = time.perf_counter()
 print(ryan_kruskal(numPlanets, edgeList)[1])
-end = time.perf_counter()
-print(f"Execution time: {end - start:.6f} seconds")
