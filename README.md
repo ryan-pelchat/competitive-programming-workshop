@@ -109,7 +109,7 @@
 |Uses Prim's not Kruskal|~~[Island Hopping](https://open.kattis.com/problems/islandhopping)~~|~~[Solution](Week_03/Hour_2_Ryan/islandhopping.py)~~|
 |Uses Modified Dijkstra because problem uses a directed graph not an undirected graph|~~[Millionaire Madness](https://open.kattis.com/problems/millionairemadness)~~|~~[Solution](Week_03/Hour_2_Ryan/millionairemadness.py)~~|
 |4.3 Minimum Spanning Tree (MST) a. Standard|[Lost Map](https://open.kattis.com/problems/lostmap)|[Solution](Week_03/Hour_2_Ryan/lostmap.py)|
-|Answer here next week|[Svemir](https://open.kattis.com/problems/svemir)|[Solution](Week_03/Hour_2_Ryan/svemir.py)|
+|4.3 Minimum Spanning Tree (MST) a. Standard|[Svemir](https://open.kattis.com/problems/svemir)|[Solution](Week_03/Hour_2_Ryan/svemir.py)|
 
 ## Week 5
 
