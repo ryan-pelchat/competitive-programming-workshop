@@ -21,10 +21,10 @@
 |4|2025-09-30|- 4.3 Minimum Spanning Tree (MST) <br> - 4.3.4 Other Applications <br> - 4.3.5 MST in Programming Contests|
 |5|2025-10-07|- Practice Qualifiers|
 |-|READING WEEK|N/A|
-|6|2025-10-21|- 3.4 Greedy (overview) <br> - 3.5 Dynamic Programming|
-|7|2025-10-28- 4.2.2 Depth First Search (DFS) <br> - 4.2.3 Breadth First Search (BFS) <br> - 4.2.4 Finding Connected Components (Undirected Graph) <br> - 4.2.5 Flood Fill (Implicit 2D Grid Graph) <br> - 4.2.6 Topological Sort (Directed Acyclic Graph) <br> - 4.2.7 Bipartite Graph Check (Undirected Graph) <br> - 4.2.8 Cycle Check (Directed Graph) <br> - 4.2.9 Finding Articulation Points and Bridges (Undirected Graph) <br> - 4.2.10 Finding Strongly Connected Components (Directed Graph) <br> - 4.2.11 Graph Traversal in Programming Contests|
-|8|2025-11-04||
-|9|2025-11-11||
+|6|2025-10-21|- General Problem Review|
+|7|2025-10-28|- 3.5 Dynamic Programming|
+|8|2025-11-04|- Competition Practice|
+|9|2025-11-11|- Competition Review Session|
 |10|2025-11-18||
 |11|2025-11-25||
 |12|2025-12-02||
@@ -117,3 +117,9 @@
 
 - [North America Qualifiers 2024](Week_05/Hour_2_Ryan/naq24.pdf)
 - [In-Class Solved Problem E](Week_05/Hour_2_Ryan/In_ClassProblemE.py)
+
+## Week 6
+
+## Week 7
+
+### Files
