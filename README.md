@@ -122,4 +122,17 @@
 
 ## Week 7
 
+#### Solve
+|Section|Problem|Solution|
+|---|---|---|
+|a1. Max 1D Range Sum|[UVa 00507 - Jill Rides Again](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=448)|[Solution](Week_07/Hour_2_Ryan/Homework_Solutions/00507.py)|
+|a2. Max 2D Range Sum|[UVa 00108 - Maximum Sum](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=44)|[Solution](Week_07/Hour_2_Ryan/Homework_Solutions/00108.py)|
+|b. Longest Increasing Subsequence (LIS)|[UVa 00481 - What Goes Up?](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=422)|[Solution](Week_07/Hour_2_Ryan/Homework_Solutions/00481.py)|
+|c. 0-1 Knapsack (Subset-Sum)|[UVa 10130 - SuperSale](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1071)|[Solution](Week_07/Hour_2_Ryan/Homework_Solutions/10130.py)|
+|d. Coin-Change (CC) - The General Version|[UVa 00674 - Coin Change](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=615)|[Solution](Week_07/Hour_2_Ryan/Homework_Solutions/00674.py)|
+|e. Traveling-Salesman-Problem (TSP)|[Kattis - beepers](https://open.kattis.com/problems/beepers)|[Solution](Week_07/Hour_2_Ryan/Homework_Solutions/beepers.py)|
+|DP level 1|[UVa 10003 - Cutting Sticks](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=944)|[Solution](Week_07/Hour_2_Ryan/Homework_Solutions/10003.py)|
+
 ### Files
+
+- [Power Point Slides](Week_07/Hour_2_Ryan/Week_07.pptx)
