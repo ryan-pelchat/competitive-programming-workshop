@@ -22,8 +22,8 @@
 |5|2025-10-07|- Practice Qualifiers|
 |-|READING WEEK|N/A|
 |6|2025-10-21|- General Problem Review|
-|7|2025-10-28|- 3.5 Dynamic Programming|
-|8|2025-11-04|- Competition Practice|
+|7|2025-10-28|- 3.5 Dynamic Programming Part 1|
+|8|2025-11-04|- 3.5 Dynamic Programming Part 2|
 |9|2025-11-11|- Competition Review Session|
 |10|2025-11-18||
 |11|2025-11-25||
@@ -122,6 +122,8 @@
 
 ## Week 7
 
+### Homework
+
 #### Solve
 |Section|Problem|Solution|
 |---|---|---|
@@ -136,3 +138,21 @@
 ### Files
 
 - [Power Point Slides](Week_07/Hour_2_Ryan/Week_07.pptx)
+
+## Week 8
+
+### Homework
+
+- Same as Week 7
+
+### Files
+
+- [Power Point Slides](Week_08/Hour_2_Ryan/Week_08.pptx)
+
+## Week 9
+
+### Homework
+
+### Files
+
+- [Power Point Slides](Week_09/Hour_2_Ryan/Week_09.pptx)
