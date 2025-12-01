@@ -33,7 +33,7 @@
 - [Union-Find Disjoint Set Template](Ryan_extra_files/unionFindTemplate.py)
 - [Basic Fenwick Tree Template](Ryan_extra_files/basicFenwickTemplate.py)
 - [Minimum Spanning Tree Template](Ryan_extra_files/mstTemplate.py)
-- [Network Flow Template](Ryan_extra_files/networkFlowTemplate.py)
+- [Network Flow Template (From CP4 Textbook)](Ryan_extra_files/networkFlowTemplate.py)
 - [Runtimes of Python Functions Report Jupyter Notebook](Ryan_extra_files/Runtimes%20of%20Python%20Functions.ipynb)
 - [Runtimes of Python Functions Report PDF](Ryan_extra_files/Runtimes%20of%20Python%20Functions.pdf)
 - [Documentation Template](Ryan_extra_files/documentationTemplate.txt)
