@@ -27,7 +27,6 @@
 |9|2025-11-11|- Competition Review Session|
 |10|2025-11-18|- 2.2.3 Bitmask <br> - 2.4.1 Graph Representation Review <br> - 2.4.3 Fenwick (Binary Indexed) Tree Part 1|
 |11|2025-11-25|- Guided solving of bitbybit and snapperhard from Kattis|
-|12|2025-12-02||
 
 ## Week 1
 
@@ -159,3 +158,12 @@
 - [Bitmask Proper Subsets Jupyter Notebook](Week_10/Hour_2_Ryan/BitsWorkshop.ipynb)
 - [Basic Fenwick Trees Demo Jupyter Notebook](Week_10/Hour_2_Ryan/Week_10.ipynb)
 - [Basic Fenwick Tree Implementation](Ryan_extra_files/basicFenwickTemplate.py)
+
+## Week 11
+
+### Files
+
+|Section|Problem|Solution|
+|---|---|---|
+|2.2: h5 Bit Manipulation|[bitbybit](https://open.kattis.com/problems/bitbybit)|[Solution](Week_11/Hour_2_Ryan/bitbybit.py)|
+|2.2: h7 Bit Manipulation|[snapperhard](https://open.kattis.com/problems/snapperhard)|[Solution](Week_11/Hour_2_Ryan/snapperhard.py)|
