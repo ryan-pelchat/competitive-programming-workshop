@@ -25,8 +25,8 @@
 |7|2025-10-28|- 3.5 Dynamic Programming Part 1|
 |8|2025-11-04|- 3.5 Dynamic Programming Part 2|
 |9|2025-11-11|- Competition Review Session|
-|10|2025-11-18||
-|11|2025-11-25||
+|10|2025-11-18|- 2.2.3 Bitmask <br> - 2.4.1 Graph Representation Review <br> - 2.4.3 Fenwick (Binary Indexed) Tree Part 1|
+|11|2025-11-25|- 2.4.3 Fenwick (Binary Indexed) Tree Part 2|
 |12|2025-12-02||
 
 ## Week 1
@@ -37,8 +37,6 @@
 - [Jupyter Notebook](Week_01/Hour_2_Ryan/Week_01.ipynb)
 
 ### Homework
-
-#### Solve
 
 |Section|Problem|Solution|
 |---|---|---|
@@ -56,7 +54,7 @@
 
 ### Homework
 
-#### Identify Data Structure/Strategy + Solve
+- Identify Data Structure/Strategy + Solve
 
 |Section|Problem|Solution|
 |---|---|---|
@@ -77,8 +75,7 @@
 
 ### Homework
 
-#### Implement your own Union-Find Disjoint Sets (UFDS)
-
+- Implement your own Union-Find Disjoint Sets (UFDS)
 - [Ryan's Union-Find Disjoint Set Implementation](Week_03/Hour_2_Ryan/Homework_Solutions/ryan_unionFind.py)
 
 #### Identify Data Structure/Strategy + Solve
@@ -101,9 +98,9 @@
 
 ### Homework
 
-#### Implement your own Kruskal MST Algorithm
+- Implement your own Kruskal MST Algorithm
+- Identify Data Structure/Strategy + Solve
 
-#### Identify Data Structure/Strategy + Solve
 |Section|Problem|Solution|
 |---|---|---|
 |Uses Prim's not Kruskal|~~[Island Hopping](https://open.kattis.com/problems/islandhopping)~~|~~[Solution](Week_03/Hour_2_Ryan/islandhopping.py)~~|
@@ -118,13 +115,10 @@
 - [North America Qualifiers 2024](Week_05/Hour_2_Ryan/naq24.pdf)
 - [In-Class Solved Problem E](Week_05/Hour_2_Ryan/In_ClassProblemE.py)
 
-## Week 6
-
 ## Week 7
 
 ### Homework
 
-#### Solve
 |Section|Problem|Solution|
 |---|---|---|
 |a1. Max 1D Range Sum|[UVa 00507 - Jill Rides Again](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=448)|[Solution](Week_07/Hour_2_Ryan/Homework_Solutions/00507.py)|
@@ -149,10 +143,19 @@
 
 - [Power Point Slides](Week_08/Hour_2_Ryan/Week_08.pptx)
 
-## Week 9
+## Week 10
 
 ### Homework
 
+- Implement your Basic Fenwick Tree!
+
+|Section|Problem|Solution|
+|---|---|---|
+|c1. Tree-related Data Structures|[Kattis – fenwick](https://open.kattis.com/problems/fenwick)|[Solution](Week_10/Hour_2_Ryan/Homework_Solutions/fenwick.py)|
+
 ### Files
 
-- [Power Point Slides](Week_09/Hour_2_Ryan/Week_09.pptx)
+- [Power Point Slides](Week_10/Hour_2_Ryan/Week_010.pptx)
+- [Bitmask Proper Subsets Jupyter Notebook](Week_10/Hour_2_Ryan/BitsWorkshop.ipynb)
+- [Basic Fenwick Trees Demo Jupyter Notebook](Week_10/Hour_2_Ryan/Week_10.ipynb)
+- [Basic Fenwick Tree Implementation](Ryan_extra_files/basicFenwickTemplate.py)
