@@ -28,6 +28,16 @@
 |10|2025-11-18|- 2.2.3 Bitmask <br> - 2.4.1 Graph Representation Review <br> - 2.4.3 Fenwick (Binary Indexed) Tree Part 1|
 |11|2025-11-25|- Guided solving of bitbybit and snapperhard from Kattis|
 
+## Ryan Extra Files
+
+- [Union-Find Disjoint Set Template](Ryan_extra_files/unionFindTemplate.py)
+- [Basic Fenwick Tree Template](Ryan_extra_files/basicFenwickTemplate.py)
+- [Minimum Spanning Tree Template](Ryan_extra_files/mstTemplate.py)
+- [Network Flow Template](Ryan_extra_files/networkFlowTemplate.py)
+- [Runtimes of Python Functions Report Jupyter Notebook](Ryan_extra_files/Runtimes%20of%20Python%20Functions.ipynb)
+- [Runtimes of Python Functions Report PDF](Ryan_extra_files/Runtimes%20of%20Python%20Functions.pdf)
+- [Documentation Template](Ryan_extra_files/documentationTemplate.txt)
+
 ## Week 1
 
 ### Files
@@ -75,7 +85,6 @@
 ### Homework
 
 - Implement your own Union-Find Disjoint Sets (UFDS)
-- [Ryan's Union-Find Disjoint Set Implementation](Week_03/Hour_2_Ryan/Homework_Solutions/ryan_unionFind.py)
 
 #### Identify Data Structure/Strategy + Solve
 

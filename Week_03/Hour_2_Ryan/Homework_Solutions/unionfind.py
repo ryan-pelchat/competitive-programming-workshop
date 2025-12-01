@@ -24,13 +24,13 @@ Notes:
 import sys
 from typing import *
 
-"""ryan_unionFind.py
+"""UnionFind.py
 
 This is my personal implementation of the union-find disjoint set
 
 """
 
-"""ryan_unionFind.py
+"""UnionFind.py
 
 This is my personal implementation of the union-find disjoint set
 
@@ -40,7 +40,7 @@ from collections import defaultdict
 import random
 
 
-class Ryan_unionFind:
+class UnionFind:
     """An implementation of the union-find disjoint set data structure
 
 
@@ -214,7 +214,7 @@ lines = sys.stdin.read().strip().splitlines()
 n = int(lines[0].split()[0])
 output = []
 
-ufds = Ryan_unionFind(n)
+ufds = UnionFind(n)
 
 # going through every command
 for command in lines[1:]:

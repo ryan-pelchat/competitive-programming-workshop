@@ -1,4 +1,4 @@
-"""ryan_unionFind.py
+"""unionFind.py
 
 This is my personal implementation of the union-find disjoint set
 
@@ -8,7 +8,7 @@ from collections import defaultdict
 import random
 
 
-class Ryan_unionFind:
+class UnionFind:
     """An implementation of the union-find disjoint set data structure
 
 
