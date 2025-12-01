@@ -41,7 +41,7 @@ import sys
 from collections import defaultdict
 
 
-class Ryan_unionFind:
+class UnionFind:
     """An implementation of the union-find disjoint set data structure"""
 
     def __init__(self, numItems: int) -> None:
@@ -115,7 +115,7 @@ output = []
 i = 0
 while i < len(lines):
     n, m = map(int, lines[i].split())
-    ufds = Ryan_unionFind(n)
+    ufds = UnionFind(n)
     for _ in range(m):
         i += 1
         values = list(map(int, lines[i].split()))

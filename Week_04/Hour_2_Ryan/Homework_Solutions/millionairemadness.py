@@ -47,14 +47,14 @@ but it depends on the direction (200->199 is 0 ladder, 200<-199 is 1 ladder)
 # This MST implementation is implemented using Kruskal
 # """
 
-# """ryan_unionFind.py
+# """UnionFind.py
 
 # This is my personal implementation of the union-find disjoint set
 
 # """
 
 
-# class Ryan_unionFind:
+# class UnionFind:
 #     """An implementation of the union-find disjoint set data structure
 
 
@@ -178,7 +178,7 @@ but it depends on the direction (200->199 is 0 ladder, 200<-199 is 1 ladder)
 #         return self._sizes[self.findSet(element)]
 
 
-# def ryan_kruskal(
+# def kruskal(
 #     numVertex: int, edgeList: list[tuple[int, int, int]]
 # ) -> tuple[list[tuple[int, int, int]], int]:
 #     """
@@ -195,7 +195,7 @@ but it depends on the direction (200->199 is 0 ladder, 200<-199 is 1 ladder)
 #             and the total weight of the MST
 #     """
 #     edges = sorted(edgeList, key=lambda x: -x[0])
-#     ufds = Ryan_unionFind(numVertex)
+#     ufds = UnionFind(numVertex)
 #     edgeListOutput = []
 #     totalMSTweight = 0
 #     while edges and len(edgeListOutput) < numVertex - 1:

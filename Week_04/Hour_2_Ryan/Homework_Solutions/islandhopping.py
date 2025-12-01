@@ -33,14 +33,14 @@ The implementation using Kruskal isn't fast enough, we need to use Prim's
 # This MST implementation is implemented using Kruskal
 # """
 
-# """ryan_unionFind.py
+# """UnionFind.py
 
 # This is my personal implementation of the union-find disjoint set
 
 # """
 
 
-# class Ryan_unionFind:
+# class UnionFind:
 #     """An implementation of the union-find disjoint set data structure
 
 
@@ -164,7 +164,7 @@ The implementation using Kruskal isn't fast enough, we need to use Prim's
 #         return self._sizes[self.findSet(element)]
 
 
-# def ryan_kruskal(
+# def kruskal(
 #     numVertex: int, edgeList: list[tuple[int, int, int]]
 # ) -> tuple[list[tuple[int, int, int]], int]:
 #     """
@@ -181,7 +181,7 @@ The implementation using Kruskal isn't fast enough, we need to use Prim's
 #             and the total weight of the MST
 #     """
 #     edges = sorted(edgeList, key=lambda x: -x[0])
-#     ufds = Ryan_unionFind(numVertex)
+#     ufds = UnionFind(numVertex)
 #     edgeListOutput = []
 #     totalMSTweight = 0
 #     while edges and len(edgeListOutput) < numVertex - 1:
@@ -236,5 +236,5 @@ The implementation using Kruskal isn't fast enough, we need to use Prim's
 #         vertexListMapped.append(idx)
 
 #     edgesAndWeights = createEdgeList(vertexList, mapping)
-#     output.append(f"{ryan_kruskal(len(vertexList), edgesAndWeights)[1]}\n")
+#     output.append(f"{kruskal(len(vertexList), edgesAndWeights)[1]}\n")
 # sys.stdout.write("".join(output))

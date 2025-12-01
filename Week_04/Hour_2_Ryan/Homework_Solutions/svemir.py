@@ -38,14 +38,14 @@ Notes:
 This MST implementation is implemented using Kruskal
 """
 
-"""ryan_unionFind.py
+"""UnionFind.py
 
 This is my personal implementation of the union-find disjoint set
 
 """
 
 
-class Ryan_unionFind:
+class UnionFind:
     """An implementation of the union-find disjoint set data structure
 
 
@@ -174,7 +174,7 @@ class Ryan_unionFind:
         return self._sizes[self.findSet(element)]
 
 
-def ryan_kruskal(
+def kruskal(
     numVertex: int, edgeList: list[tuple[int, int, int]]
 ) -> tuple[list[tuple[int, int, int]], int]:
     """
@@ -191,7 +191,7 @@ def ryan_kruskal(
             and the total weight of the MST
     """
     edges = sorted(edgeList, key=lambda x: -x[0])
-    ufds = Ryan_unionFind(numVertex)
+    ufds = UnionFind(numVertex)
     edgeListOutput = []
     totalMSTweight = 0
     while edges and len(edgeListOutput) < numVertex - 1:
@@ -247,4 +247,4 @@ for i in range(len(coords) - 1):
         )
     )
 
-print(ryan_kruskal(numPlanets, edgeList)[1])
+print(kruskal(numPlanets, edgeList)[1])
