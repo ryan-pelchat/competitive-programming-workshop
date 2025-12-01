@@ -26,7 +26,7 @@
 |8|2025-11-04|- 3.5 Dynamic Programming Part 2|
 |9|2025-11-11|- Competition Review Session|
 |10|2025-11-18|- 2.2.3 Bitmask <br> - 2.4.1 Graph Representation Review <br> - 2.4.3 Fenwick (Binary Indexed) Tree Part 1|
-|11|2025-11-25|- 2.4.3 Fenwick (Binary Indexed) Tree Part 2|
+|11|2025-11-25|- Guided solving of bitbybit and snapperhard from Kattis|
 |12|2025-12-02||
 
 ## Week 1
